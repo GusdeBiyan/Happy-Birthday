@@ -71,7 +71,7 @@ canvas {
     /* Include padding and border in the width */
 }
 
-#lightSwitch h1 {
+#lightSwitch h2 {
     margin-bottom: 20px;
 }
 
@@ -344,7 +344,35 @@ canvas {
 
 @media screen and (max-width: 500px) {
     .container {
-        width: 90%;
+        width: 100%;
+    }
+
+
+    .countdown {
+        padding: 10px;
+        z-index: 999;
+        text-align: center;
+        color: white;
+        text-align: center;
+    }
+
+    .countdown-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .countdown-item {
+        padding: 10px;
+        border-radius: 10%;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        color: #969696;
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    .countdown h2 {
+        font-size: 1em;
     }
 
     .four .text-box {
@@ -354,6 +382,10 @@ canvas {
     .text-box .fake-btn {
         bottom: -38px;
         right: 5px;
+    }
+
+    .idea-5 {
+        font-size: 30px;
     }
 
     .idea-5 span {
@@ -378,7 +410,22 @@ canvas {
     }
 
     .nine p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: lighter;
     }
+
+
+    .one h1 {
+        font-size: 0.5em;
+    }
+
+    .three p {
+        font-size: 0.5em;
+    }
+
+    #lightSwitch h2 {
+        font-size: 20px;
+    }
+
+
 }

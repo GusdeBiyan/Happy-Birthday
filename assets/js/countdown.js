@@ -6,27 +6,27 @@ document.addEventListener('DOMContentLoaded', function () {
         var currentTime = new Date();
         var timeDifference = birthday - currentTime;
 
-        var currentTime = new Date();
-
         // Hitungan mundur dalam detik
         var countdown = 10;
-
 
         var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-        
-        document.getElementById('days').innerHTML = days ;
-        document.getElementById('hours').innerHTML = hours ;
-        document.getElementById('minutes').innerHTML = minutes ;
-        document.getElementById('seconds').innerHTML = seconds ;
+        document.getElementById('days').innerHTML = days;
+        document.getElementById('hours').innerHTML = hours;
+        document.getElementById('minutes').innerHTML = minutes;
+        document.getElementById('seconds').innerHTML = seconds;
 
-
-         if (countdown <= 0) {
+        if (timeDifference < 0) {
             console.log('Hitungan mundur selesai!');
             clearInterval(countdownInterval);
+
+            // Replace these placeholders with your actual element references
+            var countdownElement = document.getElementById('countdown');
+            var lightSwitchElement = document.getElementById('lightSwitch');
+            var confettiElement = document.getElementById('confetti');
 
             // Tambahkan animasi fade out saat menyembunyikan countdown
             countdownElement.style.transition = 'opacity 1s';
@@ -56,11 +56,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Update setiap detik
-    setInterval(updateCountdown, 1000);
-
-
-
-   
+    var countdownInterval = setInterval(updateCountdown, 1000);
 });
-
-
