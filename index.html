@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Happy Birthday!!! :)</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+</head>
+
+<body>
+
+    <canvas id="confetti"></canvas>
+
+    <audio class="song2">
+        <source src="assets/music/lightOn.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <audio class="song" loop autoplay>
+        <source src="assets/music/hbd.mpeg">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <section id="countdown" class="countdown">
+        <h2>Countdown to your birthday</h2>
+        <div class="countdown-container">
+            <div class="countdown-item">
+                <div id="days"></div>
+                Days
+            </div>
+            <div class="countdown-item">
+                <div id="hours"></div>
+                Hours
+            </div>
+            <div class="countdown-item">
+                <div id="minutes"></div>
+                Minutes
+            </div>
+            <div class="countdown-item">
+                <div id="seconds"></div>
+                Seconds
+            </div>
+
+        </div>
+    </section>
+
+
+    <div id="lightSwitch">
+        <h2>It's dark in here, turn on the light</h2>
+        <button id="turnOnButton"><i class="fas fa-power-off"></i></button>
+    </div>
+
+
+    <div class="container">
+        <div class="one">
+            <h1 class="one">
+                Hi
+                <span id="name">Riska Anggraeni</span>
+            </h1>
+            <p class="two" id="greetingText">I really like your name btw!</p>
+        </div>
+
+        <div class="three">
+            <p>It's your birthday!! :D</p>
+        </div>
+
+        <div class="four">
+            <div class="text-box">
+                <p class="hbd-chatbox">
+                    "🎉 Happy Birthday! Another year, another adventure together. You're not just getting older; you're
+                    becoming more extraordinary. May this year be filled with moments that make your heart smile. Here's
+                    to growing older, wiser, and falling more in love with yourself. 🎂 Cheers to the beautiful journey
+                    ahead! 🌟"
+                </p>
+                <p class="fake-btn">Send</p>
+            </div>
+        </div>
+
+        <div class="five">
+            <p class="idea-1">I was looking for something special.</p>
+            <p class="idea-2">But then I stopped.</p>
+            <p class="idea-3">
+                Because,
+            </p>
+
+            <p class="idea-4">I realized, I found something<br>
+                <strong>special</strong>
+                .</p>
+            <p class="idea-5">
+                You are Special
+                <span>:)</span>
+            </p>
+            <p class="idea-6">
+                <span>S</span>
+                <span>O</span>
+            </p>
+        </div>
+
+        <div class="six">
+            <img src="assets/img/irene.jpg" alt="profile" class="profile-picture" id="imagePath" />
+            <div class="wish">
+                <h3 class="wish-hbd">Happy Birthday!</h3>
+                <h5 id="wishText">I always be with you! ;)</h5>
+            </div>
+        </div>
+
+        <div class="seven">
+            <div class="baloons">
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon2.svg" alt="" />
+                <img src="assets/img/ballon1.svg" alt="" />
+                <img src="assets/img/ballon3.svg" alt="" />
+            </div>
+        </div>
+
+        <div class="eight">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" />
+            </svg>
+        </div>
+
+        <div class="nine">
+            <p>Okay, now come back and tell me if you liked it.</p>
+            <p id="replay">Or click, if you want to watch it again.</p>
+            <p class="last-smile">:)</p>
+        </div>
+    </div>
+
+</body>
+<!-- Greensock -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="application/javascript" src="assets/js/main.js"></script>
+
+<script src="assets/js/countdown.js"></script>
+
+<script src="assets/js/confetti.min.js"></script>
+
+<script>
+    const confettiSettings = {
+        target: 'confetti'
+    };
+    const confetti = new window.ConfettiGenerator(confettiSettings);
+    confetti.render();
+</script>
+
+</html>
