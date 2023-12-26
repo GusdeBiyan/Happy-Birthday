@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Tanggal ulang tahun (format: tahun, bulan-1, tanggal)
-    var birthday = new Date(2023, 11, 27);
+    var birthday = new Date(2023, 11, 29);
 
     function updateCountdown() {
         var currentTime = new Date();
@@ -24,44 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('seconds').innerHTML = seconds ;
 
 
-        if (timeDifference <= 0) {
-           
-            // Redirect to another page
-            window.location.href = 'copy.html';
-        }
-    }
-
-    // Update setiap detik
-    setInterval(updateCountdown, 1000);
-
-
-
-    var currentTime = new Date();
-
-    // Hitungan mundur dalam detik
-    var countdown = 10;
-
-     const countdownElement = document.getElementById('countdown');
-    const confettiElement = document.getElementById('confetti');
-    const lightSwitchElement = document.getElementById('lightSwitch');
-
-    // Fungsi untuk menampilkan hitungan mundur
-    function displayCountdown() {
-        console.log('Hitungan mundur: ' + countdown + ' detik');
-    }
-
-    // Menampilkan hitungan mundur awal
-    displayCountdown();
-
-        // Mengurangi hitungan mundur setiap detik
-        var countdownInterval = setInterval(function () {
-            countdown--;
-
-            // Menampilkan hitungan mundur
-            displayCountdown();
-
-            // Jika hitungan mundur mencapai 0, hentikan interval
-              if (countdown <= 0) {
+         if (countdown <= 0) {
             console.log('Hitungan mundur selesai!');
             clearInterval(countdownInterval);
 
@@ -90,7 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 confettiElement.style.animation = '';
             }, 1000);
         }
-        }, 1000);
+    }
+
+    // Update setiap detik
+    setInterval(updateCountdown, 1000);
+
+
+
+   
 });
 
 
