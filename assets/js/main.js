@@ -87,14 +87,14 @@ const animationTimeline = () => {
     // timeline
     const tl = new TimelineMax();
 
-    tl.to(".container", 1, {
+    tl.to(".container", 0.6, {
         visibility: "visible"
     })
     .from(".one", 0.7, {
         opacity: 0,
         y: 10
     })
-    .from(".two", 0.7, {
+    .from(".two", 0.4, {
         opacity: 0,
         y: 10
     })
@@ -154,17 +154,16 @@ const animationTimeline = () => {
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-2", 0.7, ideaTextTrans)
     .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
-    .from(".idea-3", 0.5, ideaTextTrans)
-    .to(".idea-3", 0.5, ideaTextTransLeave, "+=2.5")
-    .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4 strong", 0.5, {
+    .from(".idea-3", 0.7, ideaTextTrans)
+    .to(".idea-3 strong", 0.5, {
         scale: 1.2,
         x: 10,
         backgroundColor: "rgb(21, 161, 237)",
         color: "#fff",
     })
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
+    .from(".idea-4", 0.7, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
-   
     .from(
         ".idea-5",
         0.7, {
